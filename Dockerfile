@@ -37,10 +37,9 @@ FROM alpine:latest
 
 # إعداد البيئة
 ENV TZ=Asia/Shanghai \
-    USER_TOKEN_SECRET="3378844ccf5baae72b6135ea350bd0
-" \ 
-    SESSION_SECRET="82f209eece5181530e7947fa205b6c10" \
-    SQL_DSN="postgres://root:312sCEUn4flh7FeQ06cBZMkaG5RyJ9p8@sjc1.clusters.zeabur.com:32092/zeabur"
+    USER_TOKEN_SECRET=3378844ccf5baae72b6135ea350bd0 \
+    SESSION_SECRET=82f209eece5181530e7947fa205b6c10 \
+    SQL_DSN=postgres://root:312sCEUn4flh7FeQ06cBZMkaG5RyJ9p8@sjc1.clusters.zeabur.com:32092/zeabur
 
 RUN apk update && \
     apk upgrade && \
